@@ -1,0 +1,23 @@
+{
+  "name": "property-by-name-list",
+  "version": "1.0.1",
+  "description": "get/set object property by name list",
+  "main": "property-by-name-list.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "property",
+    "name-list"
+  ],
+  "author": "fwg",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adf0001/property-by-name-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adf0001/property-by-name-list/issues"
+  },
+  "homepage": "https://github.com/adf0001/property-by-name-list#readme"
+}
