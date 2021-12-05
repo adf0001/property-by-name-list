@@ -8,10 +8,13 @@ module.exports = {
 
 		property_by_name_list(obj, ["a", "b", "c"], "ddd");		//set
 
+		property_by_name_list(obj, ["a", "b", "e"], "eee");
+		property_by_name_list(obj, ["a", "b", "e"], null, true);	//delete
 
 		done(!(
 			obj.a.b.c === "ddd" &&
-			property_by_name_list(obj, ["a", "b", "c"]) === "ddd"		//get
+			property_by_name_list(obj, ["a", "b", "c"]) === "ddd" &&		//get
+			!("e" in obj.a.b)
 		));
 	},
 

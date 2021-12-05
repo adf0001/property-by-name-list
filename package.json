@@ -1,6 +1,6 @@
 {
   "name": "property-by-name-list",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "get/set object property by name list",
   "main": "property-by-name-list.js",
   "scripts": {

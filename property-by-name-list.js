@@ -1,8 +1,8 @@
 
 // property-by-name-list @ npm, get/set object property by name list.
 
-//module.exports = function ( obj, nameList [, value] )
-module.exports = function (obj, nameList, value) {
+//module.exports = function ( obj, nameList [, value [, deleteValue ] ] )
+module.exports = function (obj, nameList, value, deleteValue) {
 	if (typeof nameList === "string") nameList = [nameList];
 
 	var i, imax = nameList.length - 1, nli, item;
@@ -14,7 +14,10 @@ module.exports = function (obj, nameList, value) {
 		obj = item;
 	}
 	//item
-	if (typeof value !== "undefined") {
+	if (deleteValue) {
+		delete obj[nameList[imax]];
+	}
+	else if (typeof value !== "undefined") {
 		return obj[nameList[imax]] = value;	//last, set
 	}
 	else {
